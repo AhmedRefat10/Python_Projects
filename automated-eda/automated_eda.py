@@ -8,7 +8,7 @@ import seaborn as sns
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 
-@st.cache_data
+@st.cache
 def load_data(data):
   if data.name.endswith('.csv'):
     df = pd.read_csv(data)
